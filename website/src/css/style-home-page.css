@@ -1,0 +1,184 @@
+@import url('default-body.css');
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+
+    background-color: #d4e8d9;
+    border-radius: 8px;
+    padding: 30px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+/* Container card */
+.plants-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    justify-content: flex-start;
+}
+
+/* Base card for plants */
+.plant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 200px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    color: #350;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* icon trash for eliminate */
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    color: #ffcccc;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.delete-icon:hover {
+    color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Card "add plant" */
+.add-plant-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add-plant-card:hover {
+    transform: scale(1.05);
+}
+
+.add-plant-plus {
+    font-size: 50px;
+    color: #350;
+    margin-bottom: 10px;
+}
+
+.add-plant-text {
+    margin: 0;
+    font-size: 16px;
+    color: #350;
+    font-weight: bold;
+}
+
+/*stile and info every cards */
+.plant-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.plant-name {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.plant-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.plant-water-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.water-time {
+    font-size: 14px;
+    color: #999;
+}
+
+.water-button {
+    background-color: #d4e8d9;
+    color: #350;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.water-button:hover {
+    background-color: #c5dbc9;
+}
+
+/* confirmation elimination metod */
+.confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.confirm-modal-content {
+    background-color: #d4e8d9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirm-modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes-button {
+    background-color: #ffcccc;
+    color: #350;
+}
+
+.yes-button:hover {
+    background-color: #ff6666;
+}
+
+.no-button {
+    background-color: #ccc;
+    color: #350;
+}
+
+.no-button:hover {
+    background-color: #999;
+}
+@media (max-width: 950px) {
+    .main-container {
+        width: 90%;
+        min-height: calc(100vh - 140px);
+
+    }
+}

@@ -1,0 +1,124 @@
+/* Navbar styling */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4e8d9;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.navbar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    color: #350;
+    left: 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #350;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.navbar .searchbar {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .searchbar input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f0f7f4;
+    font-size: 16px;
+    outline: none;
+}
+.navbar .searchbar input:focus {
+    outline: 2px solid #a0cfa6;
+}
+
+.navbar .searchbar .search-icon{
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    color: #350;
+    cursor: pointer;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.10);
+}
+
+.navbar .menu-icon:hover {
+    transform: scale(1.20);
+}
+
+.popup-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 150px;
+}
+
+.popup-menu .menu-link {
+    display: block;
+    padding: 10px 15px;
+    color: #350;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3 ease;
+}
+
+.popup-menu .menu-link:hover {
+    background-color: #f0f7f4;
+}
+
+.popup-menu.active {
+    display: block;
+}
+
+
+
+@media (max-width: 950px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        position: static;
+        margin: 5px auto;
+        font-size: 20px;
+        order: 1;
+    }
+
+    .navbar .menu-icon {
+        position: static;
+        margin: 5px;
+    }
+
+    .navbar .searchbar {
+        order: 3;
+        width: 100%;
+        max-width: none;
+        flex: none;
+    }
+}
+

@@ -1,0 +1,70 @@
+@import url('default-body.css');
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    margin-top: 80px;
+}
+
+.registerbox {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.registerbox h1 {
+    margin-bottom: 20px;
+    color: #350;
+}
+
+.registerbox input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f0f7f4;
+    box-sizing: border-box;
+}
+
+.registerbox button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #a8d5ba;
+    color: #350;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.registerbox button:hover {
+    background-color: #8cc3a1;
+}
+
+.registerbox .register-button {
+    background-color: #d4e8d9;
+}
+
+.registerbox .register-button:hover {
+    background-color: #b8d9c5;
+}
+
+.registerbox .already-registered {
+    display: block;
+    margin: 10px 0;
+    color: #350;
+    text-decoration: none;
+}
+
+.registerbox .already-registered:hover {
+    text-decoration: underline;
+}
